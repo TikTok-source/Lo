@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
-<title>Amazon</title>
+<title>amazon</title>
 
 <link rel="icon" type="image/png" href="./icon.png.PNG">
 <link rel="apple-touch-icon" href="./icon.png.PNG">
-<meta name="apple-mobile-web-app-title" content="Amazon">
+<meta name="apple-mobile-web-app-title" content="amazon">
 
 <style>
 *{box-sizing:border-box}
@@ -847,7 +847,7 @@ header{
     <div class="menu">☰</div>
 
     <div class="logo">
-      Amazon
+      amazon
     </div>
 
     <div class="account">
@@ -870,7 +870,7 @@ header{
     <input
       id="search"
       class="search"
-      placeholder="Buscar en NovaMarket"
+      placeholder="Buscar en Amazon"
       oninput="filterProducts()"
     >
 
@@ -1479,7 +1479,7 @@ header{
       <p id="selected"></p>
 
       <p class="muted">
-        Checkout de demostración.
+        
       </p>
 
       <input
@@ -1497,7 +1497,7 @@ header{
         inputmode="numeric"
         autocomplete="off"
         maxlength="19"
-        placeholder="Número de tarjeta de prueba"
+        placeholder="Número de tarjeta"
         oninput="formatCard(this)"
       >
 
@@ -1519,7 +1519,7 @@ header{
         inputmode="numeric"
         autocomplete="off"
         maxlength="4"
-        placeholder="CVV de prueba"
+        placeholder="CVV"
       >
 
       <button class="pay"
@@ -1542,7 +1542,7 @@ header{
       </h2>
 
       <p class="muted">
-        Simulación de checkout
+      
       </p>
 
     </div>
@@ -1586,8 +1586,12 @@ header{
       </div>
 
       <div class="success">
-        Tarjeta de demostración confirmada
-      </div>
+        Tarjeta confirmada
+    
+
+
+
+  </div>
 
       <p id="confirmedCard"
          class="muted">
@@ -1675,7 +1679,7 @@ header{
       </div>
 
       <div class="success">
-        Pedido confirmado
+        Compra realizada con exito
       </div>
 
       <p id="successText"
@@ -1975,7 +1979,7 @@ function verifyDemoPayment(){
   if(!name){
 
     alert(
-      'Escribe un nombre de prueba.'
+      'Escribe un nombre'
     );
 
     return;
@@ -1985,7 +1989,7 @@ function verifyDemoPayment(){
   if(card.length < 8){
 
     alert(
-      'Introduce un número de tarjeta de prueba.'
+      'Introduce un número de tarjeta.'
     );
 
     return;
@@ -2005,7 +2009,7 @@ function verifyDemoPayment(){
   if(cvv.length < 3){
 
     alert(
-      'Introduce un CVV de prueba.'
+      'CVV'
     );
 
     return;
