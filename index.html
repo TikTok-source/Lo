@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
-<title>NovaMarket</title>
+<title>amazon</title>
 
 <link rel="icon" type="image/png" href="./icon.png.PNG">
 <link rel="apple-touch-icon" href="./icon.png.PNG">
-<meta name="apple-mobile-web-app-title" content="NovaMarket">
+<meta name="apple-mobile-web-app-title" content="Amazon">
 
 <style>
 *{box-sizing:border-box}
@@ -825,7 +825,7 @@ header{
     <div class="menu">☰</div>
 
     <div class="logo">
-      NovaMarket
+      Amazon
     </div>
 
     <div class="account">
@@ -1580,7 +1580,7 @@ header{
       </div>
 
       <div class="success">
-        Tarjeta de prueba confirmada
+        Tarjeta confirmada
       </div>
 
       <p
@@ -1874,7 +1874,7 @@ function getCardType(number){
   if(/^3[47]/.test(number))
     return 'AMEX';
 
-  return 'CARD';
+  return '';
 
 }
 
@@ -1887,51 +1887,51 @@ function verifyDemoPayment(){
 
   const name=
     document
-      .getElementById('demoName')
+      .getElementById('')
       .value
       .trim();
 
   const card=
     document
-      .getElementById('demoCard')
+      .getElementById('')
       .value
       .replace(/\D/g,'');
 
   const expiry=
     document
-      .getElementById('demoExpiry')
+      .getElementById('')
       .value;
 
   const cvv=
     document
-      .getElementById('demoCode')
+      .getElementById('')
       .value;
 
 
   if(!name){
 
-    alert('Escribe un nombre de prueba.');
+    alert('nombre.');
     return;
 
   }
 
   if(card.length<8){
 
-    alert('Introduce una tarjeta de prueba.');
+    alert('tarjeta.');
     return;
 
   }
 
   if(!/^\d{2}\/\d{2}$/.test(expiry)){
 
-    alert('Introduce MM/AA.');
+    alert('MM/AA.');
     return;
 
   }
 
   if(cvv.length<3){
 
-    alert('Introduce un CVV de prueba.');
+    alert('CVV.');
     return;
 
   }
@@ -1958,7 +1958,7 @@ function verifyDemoPayment(){
 
 
     const type=
-      getCardType(card);
+      getCardType();
 
 
     document
@@ -1970,7 +1970,7 @@ function verifyDemoPayment(){
       .getElementById('visualCardNumber')
       .textContent=
       '•••• •••• •••• '+
-      card.slice(-4);
+      .slice(-4);
 
 
     document
